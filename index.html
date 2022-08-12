@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="description" content="Custom Jersey Service Malaysia ">
+    <meta  name="keywords" content="custom, typhoon,penang">
+    <meta  property="og:site_name" content="Typhoon & Co">
+    <meta  property="og:url" content="https://typhoonandco.com.my/">
+    <meta  property="og:type" content="website">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta  property="og:description" content="Custom Jersey Service Malaysia">
+    <title>Tan Refrigeration</title>
+    <meta  name="description" content="∆ Kedai ditubuhkan pada 11 Mar 1978 (43tahun)
+    ∆ Premis paling lama di Sg Petani dalam industri Peti Sejuk ">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link   rel="icon" type="image/x-icon" href="./img/logo/TAN REFRIGERATION LOGO-01.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<!-- fade in page load for better UX https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ -->
+<style>
+    html {
+  scroll-behavior: smooth;
+}
+    body {
+        animation: fadeInAnimation ease 0.9s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body class="bg-white" id="home">
+    <!-- Navbar -->
+<div class=" sticky top-0 z-70 bg-gray-200 w-full " x-data="{ isMobileOpen: false, urlPathname:location.pathname  }"
+  style="
+/* From https://css.glass  #D5D5D5E8*/
+background: rgba(213, 213, 213, 0.95);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.7px);
+-webkit-backdrop-filter: blur(6.7px);
+">
+  <!-- top bar -->
+  <div class="hidden lg:block relative py-1  px-4 sm:px-6 lg:px-8  bg-brown">
+    <div class=" flex   justify-center z-70 relative ">
+      <div class="flex grow space-x-8 ml-36 mr-40 items-center">
+        <a href="/" class="font-light text-xs xl:text-base text-white hover:text-gold-300">Waktu Buka: 9:00 AM - 6:30 PM (Ahad Tutup) </a>
+        <a href="tel:+6044218133" class="font-light text-xs xl:text-base text-white hover:text-gold-300">04-421 8133</a>
+        <a href="mailto:tanref@yahoo.com" class="font-light text-xs xl:text-base text-white hover:text-gold-300">tanref@yahoo.com</a> 
+      </div>
+      
+
+      <div class="flex  grow-0  items-center justify-end space-x-8"><a class="text-white hover:text-white"
+          href="https://www.facebook.com/people/Tan-Refrigeration-Service/100063651846596/"><span class="sr-only">Facebook</span><svg
+            class="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              clip-rule="evenodd"></path>
+          </svg></a><a class="text-white  hover:text-white" href="https://wa.me/6044218133"><span
+            class="sr-only">whatsapp</span><svg aria-hidden="true" fill="currentColor" class="w-7 h-7" role="img"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" color="#fffff">
+            <path fill="currentColor"
+              d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+            </path>
+          </svg></a></div>
+    </div>
+    <div class="lg:absolute lg:inset-y-0 lg:-right-0 lg:w-3/12 z-10">
+      <!-- https://bennettfeely.com/clippy/ -->
+      <svg class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full bg-gold-500" style="-webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);">
+      </svg>
+    </div>
+  </div>
+  <div class=" lg:max-w-7xl mx-auto relative py-2  sm:py-6 lg:py-9 px-4 sm:px-6 lg:px-8  ">
+    <nav class="relative flex items-center justify-center  sm:h-10 " aria-label="Global">
+      <div class="hidden md:block md:mr-10 md:pl-4 md:space-x-8">
+        <a href="/" class="font-bold text-gray-500 hover:text-gray-900"
+          :class="(urlPathname===`/` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Utama
+        </a>
+        <a href="/tentang-kami" class=" text-gray-500 hover:text-gray-900"
+          :class="(urlPathname===`/tentang-kami` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Tentang
+          Kami</a>
+      </div>
+      <div class="flex items-center flex-grow flex-shrink-0 md:flex-grow-0">
+        <div class="flex items-center justify-between w-full md:w-auto">
+          <a href="/" class="flex">
+            <span class="sr-only">TAN REFRIGERATION</span>
+            <img class="h-14 w-auto md:h-20 lg:h-28" src="./img/logo/TAN REFRIGERATION LOGO-01.png">
+          </a>
+          <div class="-mr-2 flex items-center md:hidden">
+            <button type="button" @click="isMobileOpen = true" @click.away="isMobileOpen = false"
+              class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!-- Heroicon name: outline/menu -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+        <!-- https://stackoverflow.com/questions/4597050/how-to-check-if-the-url-contains-a-given-string -->
+        <!-- <a href="/produk" class="  text-gray-500 hover:text-gray-900"
+          :class="(urlPathname.indexOf('/produk') > -1 )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Produk</a> -->
+          <a href="/produk" class="  text-gray-500 hover:text-gray-900"
+          :class="(/produk/.test(urlPathname))? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Produk</a>
+        <a href="/hubungi-kami" class="  text-gray-500 hover:text-gray-900"
+          :class="(urlPathname===`/hubungi-kami` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Hubungi
+          Kami</a>
+      </div>
+    </nav>
+  </div>
+  <!-- Mobile menu -->
+  <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden " x-show="isMobileOpen"
+    :class="{ 'absolute' : isMobileOpen , 'hidden' : !isMobileOpen}" x-transition:enter="duration-150 ease-out"
+    x-transition:enter-start="opacity-0 scale-95 " x-transition:enter-end="opacity-100 scale-100 "
+    x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100 "
+    x-transition:leave-end="opacity-0 scale-95 ">
+    <div class="rounded-lg shadow-md bg-gray-100 ring-1 ring-black ring-opacity-5 overflow-hidden" style="
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.97);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+">
+      <div class="px-5 pt-4 flex items-center justify-between  bg-gray-50">
+        <div>
+          <img class="h-14 md:h-20 lg:h-28 w-auto" src="./img/logo/TAN REFRIGERATION LOGO-01.png"alt="">
+        </div>
+        <div class="-mr-2">
+          <button type="button" @click="isMobileOpen = false"
+            class="  rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <span class="sr-only">Tutup menu</span>
+            <!-- Heroicon name: outline/x -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-50">
+        <a href="/" :class="(urlPathname===`/` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+          class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Utama</a>
+        <a href="/tentang-kami" :class="(urlPathname===`/tentang-kami` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+          class="block px-3 py-2   text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Tentang
+          Kami</a>
+        <a href="/produk" :class="(/produk/.test(urlPathname))? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+          class="block px-3 py-2  text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Produk</a>
+        <a href="/hubungi-kami" :class="(urlPathname===`/hubungi-kami` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+          class="block px-3 py-2  text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Hubungi
+          Kami</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="relative overflow-hidden">
+            <div>
+                <!-- Hero card -->
+                <div class="relative">
+                    <div class="mx-auto">
+                        <div class="relative shadow-xl " >
+                            <div class="absolute inset-0">
+                                <img class="h-full w-full object-cover" src="./img/hero/hero-image-optimized.png"
+                                    alt="People working on laptops">
+                                <div class="absolute inset-0 bg-gray-600 mix-blend-multiply"></div>
+                            </div>
+                            <div class="relative px-4 py-16 sm:px-6 lg:px-8"  >
+                                <div class="absolute hidden sm:block right-10  md:right-18 lg:right-28 top-36">
+                                    <img class="h-16 sm:h-20 md:h-28 lg:h-36 xl:h-40"
+                                        src="./img/hero/harga-dari-kilang.png" alt="harga-dari-kilang"
+                                        data-aos="zoom-in" data-tilt data-tilt-scale="1.3">
+
+                                </div>
+                                <h1 class="text-center text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+                                    <span class="block text-white mb-4 sm:mb-6 lg:mb-8">Peralatan Perkakas Terbaik untuk
+                                        Komersial
+                                    </span>
+
+                                    <span class="block text-white">Beli <span class="text-gold-400">| </span>Jual <span
+                                            class="text-gold-400">|</span> Sewa <span class="text-gold-400">|
+                                        </span>Baiki</span>
+                                </h1>
+                                <!-- hero buttob -->
+                                <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center z-30  ">
+                                    <div class="text-center  z-30 ">
+                                        <a href="/produk"
+                                            class=" z-30  flex items-center justify-center px-1 py-2 border border-transparent text-base font-semibold rounded-xl shadow-sm text-gray-700 bg-gold-500 hover:bg-gold-200 hover:transform hover:scale-105 sm:px-8">
+                                            lebih lanjut </a>
+                                    </div>
+                                </div>
+                                <!-- hero product image -->
+                                <div class=" mt-12 sm:mt-2 lg:-mt-10 xl:-mt-12 max-w-full mx-auto  "  >
+                                    <img class="h-full w-full object-cover hidden md:block -mb-16 z-10"   
+                                        src="./img/hero/hero-product-row-desktop-optimized.png"
+                                        alt="People working on laptops">
+                                    <img class="h-full w-full object-cover block md:hidden"
+                                        src="./img/hero/hero-product-row-mobile-1-optimized.png"
+                                        alt="People working on laptops">
+                                </div>
+                                <!-- logo row -->
+                                <div class="max-w-full mx-auto py-2 px-4 sm:px-6 lg:px-8">
+                                    <div class="mt-6 grid grid-cols-3 gap-8 sm:grid-cols-4 lg:grid-cols-6 ">
+                                        <div class="col-span-1 flex justify-center  md:col-span-1 lg:col-span-1 ">
+                                            <img class="h-10 sm:h-12 md:h-16 xl:h-20" data-tilt data-tilt-axis="x"
+                                                data-tilt-scale="1.1" src="./img/hero/commercial-refrigeration.png"
+                                                alt="commercial-refrigeration">
+                                        </div>
+                                        <div class="col-span-1 flex justify-center  md:col-span-1 lg:col-span-1 ">
+                                            <img class="h-10 sm:h-12 md:h-16 xl:h-20" data-tilt data-tilt-axis="x"
+                                                data-tilt-scale="1.1" src="./img/hero/cooking-equipment.png"
+                                                alt="cooking-equipment">
+                                        </div>
+                                        <div class="col-span-1 flex justify-center  md:col-span-1 lg:col-span-1 ">
+                                            <img class="h-10 sm:h-12 md:h-16 xl:h-20" data-tilt data-tilt-axis="x"
+                                                data-tilt-scale="1.1" src="./img/hero/foodservice-equipment.png"
+                                                alt="foodservice-equipment">
+                                        </div>
+                                        <div class="col-span-1 flex justify-center  md:col-span-1 lg:col-span-1 ">
+                                            <img class="h-10 sm:h-12 md:h-16 xl:h-20" data-tilt data-tilt-axis="x"
+                                                data-tilt-scale="1.1" src="./img/hero/bakery-machinery.png"
+                                                alt="bakery-machinery">
+                                        </div>
+                                        <div class="col-span-1 flex justify-center sm:col-start-2   lg:col-span-1 ">
+                                            <img class="h-10 sm:h-12 md:h-16 xl:h-20" data-tilt data-tilt-axis="x"
+                                                data-tilt-scale="1.1" src="./img/hero/stainless-steel-fabriction.png"
+                                                alt="stainless-steel-fabriction">
+                                        </div>
+                                        <div class="col-span-1 flex justify-center  sm:col-start-3   lg:col-span-1 ">
+                                            <img class="h-10 sm:h-12 md:h-16 xl:h-20" data-tilt data-tilt-axis="x"
+                                                data-tilt-scale="1.1" src="./img/hero/consultation-design.png"
+                                                alt="consultation-design">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- why us Section -->
+        <div class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <p class="mt-2 text-2xl font-extrabold  text-gray-900 sm:text-3xl">
+                        Kenapa Pilih Kami?
+                    </p>
+                    <div class=" flex items-baseline justify-center  mt-4">
+                        <p class="w-10 border-b-2 md:border-b-4 border-gold-500">
+                        </p>
+                    </div>
+                    <!-- <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate
+                        veritatis in accusamus quisquam.
+                    </p> -->
+                </div>
+                <div class="mx-auto">
+                    <div class="pt-12 bg-white">
+                        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 text-center">
+                            <dl
+                                class="flex flex-row space-x-4  justify-around items-center justify-items-center mx-auto">
+                                <div class="items-center justify-center text-center" data-aos="fade">
+                                    <div>
+                                        <div class="flex items-center justify-center ">
+                                            <img class=" w-10/12" data-tilt data-tilt-axis="x" data-tilt-scale="1.1"
+                                                src="./img/section/kualiti-tinggi.png" alt="commercial-refrigeration">
+
+                                        </div>
+                                        <p class="mt-5 text-base sm:text-lg lg:text-xl  leading-6 font-bold text-gray-900">Kualiti Tinggi</p>
+                                    </div>
+                                </div>
+                                <div class="hidden sm:block sm:my-3 sm:py-16 border-r-4 border-gold" data-aos="fade">
+                                </div>
+                                <div class="items-center justify-center text-center" data-aos="fade"
+                                    data-aos-delay="100">
+                                    <div>
+                                        <div class="flex items-center justify-center ">
+                                            <img class="w-10/12" data-aos="fade" data-tilt data-tilt-axis="x"
+                                                data-tilt-scale="1.1" src="./img/section/sejak-1978.png"
+                                                alt="commercial-refrigeration">
+
+                                        </div>
+                                        <p class="mt-5 text-base sm:text-lg lg:text-xl  leading-6 font-bold text-gray-900">Sejak 1978</p>
+                                    </div>
+                                </div>
+                                <div class="hidden sm:block sm:my-3 sm:py-16 border-r-4 border-gold" data-aos="fade">
+                                </div>
+                                <div class="items-center justify-center text-center" data-aos="fade"
+                                    data-aos-delay="150">
+                                    <div>
+                                        <div class="flex items-center justify-center text-center ">
+                                            <img class="w-10/12" data-aos="fade" data-tilt data-tilt-axis="x"
+                                                data-tilt-scale="1.1" src="./img/section/perkhidmatan-terbaik.png"
+                                                alt="commercial-refrigeration">
+
+                                        </div>
+                                        <p class="mt-5 text-base sm:text-lg lg:text-xl  leading-6 font-bold text-gray-900">Perkhidmatan
+                                            Terbaik</p>
+                                    </div>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Us -->
+        <div class="pt-12 bg-white">
+            <div class="lg:block relative py-1  px-4 sm:px-6 lg:px-8  bg-gray-200">
+                <div class=" flex    z-60 relative ">
+                    <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-6xl lg:px-2  lg:w-full lg:pb-28 xl:pb-32 mx-auto">
+                        <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-6  lg:items-center">
+                            <div class="relative lg:col-span-4">
+                                <div class="inline-block items-center mb-2 ">
+                                    <p class="w-10 border-b-2 md:border-b-4 border-gold-500">
+                                    </p>
+                                </div>
+                                <h3
+                                    class=" text-2xl inline font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:tracking-normal">
+                                    <span class="font-semibold">Tentang</span> Tan Refrigeration Service
+                                </h3>
+                                <h3
+                                    class="mt-6 text-3xl  font-semibold text-gray-900 tracking-tight sm:text-4xl  xl:text-4.5xl ">
+                                    Kedai Peti Sejuk
+                                </h3>
+                                <h3
+                                    class="mt-2 text-3xl  font-extrabold text-gray-900 tracking-tight sm:text-4xl xl:text-4.5xl sm:tracking-tight">
+                                    PALING LAMA DI SUNGAI PETANI!
+        
+                                </h3>
+        
+                                <p class="mt-6 text-base text-gray-900 w-2/3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.
+                                    Phasellus nulla dolor, ornare ut lacinia sed, elementum vel
+                                    lorem. Mauris sit amet auctor risus.</p>
+                                <div class="mt-6 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-start z-30  ">
+        
+                                    <div class="text-center   ">
+                                        <a href="/produk"
+                                            class=" z-30  flex items-center justify-center px-1 py-2 border border-transparent text-base font-bold rounded-xl shadow-sm text-gray-700 bg-gold-500 hover:bg-gold-200 hover:transform hover:scale-105 sm:px-8">
+                                            lebih lanjut </a>
+                                    </div>
+                                </div>
+                                <dl class="mt-10 grid sm:grid-cols-2 " id="counter">
+                                    <div>
+                                        <!-- https://stackoverflow.com/questions/65344277/how-do-i-create-an-animated-number-counter-using-alpine-js -->
+                                        <!-- https://stackoverflow.com/questions/123999/how-can-i-tell-if-a-dom-element-is-visible-in-the-current-viewport -->
+                                        <!-- https://stackoverflow.com/a/68262400 -->
+                                        <div class="flex items-center hover:transform hover:scale-105 "
+                                            x-data="{ current: 0, target: 532, time: 500}" x-init="() => {
+                                                    const el = document.querySelector('#counter')
+                                                    const observer = new window.IntersectionObserver(([entry]) => {
+                                                      if (entry.isIntersecting) {
+                                                        //console.log('ENTER')
+                                                        start = current; 
+                                                        const interval = Math.max(time / (target - start), 5); 
+                                                        const step = (target - start) /  (time / interval);  
+                                                        const handle = setInterval(() => {
+                                                            if(current < target) 
+                                                                current += step
+                                                            else {
+                                                                clearInterval(handle);
+                                                                current = target
+                                                            }   
+                                                            }, interval)
+                                                        return
+                                                      }
+                                                      //console.log('LEAVE')
+                                                    }, {
+                                                      root: null,
+                                                      threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
+                                                    })
+                                                    
+                                                    observer.observe(el);
+        
+                                                  
+                                                }">
+                                            <img class="flex items-center justify-center h-32 w-32" data-aos="fade" data-tilt
+                                                data-tilt-axis="x" data-tilt-scale="1.1" src="./img/section/project-selesai.png"
+                                                alt="commercial-refrigeration">
+                                            <p class="  text-6xl leading-6 font-extrabold text-gray-900"
+                                                x-text="Math.round(current)+`+`">532+</p>
+                                        </div>
+                                        <dd class="ml-5 text-3xl text-gray-900 tracking-tight font-bold">Projek Selesai
+        
+                                        </dd>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center hover:transform hover:scale-105  "
+                                            x-data="{ current: 0, target: 1258, time: 600}" x-init="() => {
+                                                    const el = document.querySelector('#counter')
+                                                    const observer = new window.IntersectionObserver(([entry]) => {
+                                                      if (entry.isIntersecting) {
+                                                        //console.log('ENTER')
+                                                        start = current; 
+                                                        const interval = Math.max(time / (target - start), 5); 
+                                                        const step = (target - start) /  (time / interval);  
+                                                        const handle = setInterval(() => {
+                                                            if(current < target) 
+                                                                current += step
+                                                            else {
+                                                                clearInterval(handle);
+                                                                current = target
+                                                            }   
+                                                            }, interval)
+                                                        return
+                                                      }
+                                                      //console.log('LEAVE')
+                                                    }, {
+                                                      root: null,
+                                                      threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
+                                                    })
+                                                    
+                                                    observer.observe(el);
+        
+                                                  
+                                                }">
+                                            <img class="flex items-center justify-center h-32 w-32" data-aos="fade" data-tilt
+                                                data-tilt-axis="x" data-tilt-scale="1.1"
+                                                src="./img/section/pelanggan-gembira.png" alt="commercial-refrigeration">
+                                            <p class="  text-6xl leading-6 font-extrabold text-gray-900"
+                                                x-text="Math.round(current)+`+`">1258+</p>
+                                        </div>
+                                        <dd
+                                            class="ml-5 text-3xl text-gray-900 lg:whitespace-nowrap lg:overflow-visible tracking-tight font-bold">
+                                            Pelanggan yang gembira
+                                        </dd>
+                                    </div>
+        
+        
+                                </dl>
+                            </div>
+        
+                            <div class="mt-10 mx-12 relative lg:mt-0 lg:col-span-2" aria-hidden="true">
+                                <img class="relative mx-auto drop-shadow-md hover:drop-shadow-xl hover:transform hover:scale-105 "
+                                    width="490" data-aos="fade" data-aos-delay="100" src="./img/section/about-us-section.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" lg:absolute lg:inset-y-0 lg:-right-0 lg:w-6/12 z-10">
+                    <!-- https://bennettfeely.com/clippy/ -->
+                    <svg class="hidden lg:block h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full bg-gold-500" style="-webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+                          clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 0% 100%);">
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Produk -->
+        <div class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <p class="mt-2 text-2xl font-extrabold  text-gray-900 sm:text-3xl">
+                        Produk
+                    </p>
+                    <div class=" flex items-baseline justify-center  mt-4">
+                        <p class="w-10 border-b-2 md:border-b-4 border-gold-500">
+                        </p>
+                    </div>
+                    <p class="mt-4   justify-center  text-center max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla dolor, ornare
+                        ut lacinia sed, elementum vel lorem. Mauris sit amet auctor risus
+                    </p>
+                </div>
+                <div class="mx-auto">
+                    <div class="pt-12 bg-white">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                            <div class="splide splide-produk-row">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <!-- <li class="splide__slide ">
+                                                    <img class="rounded-lg object-contain" src="./img/product/3 Door Chiller.png"
+                                                        alt="" width="1310" height="873">
+                                                </li> -->
+                                        <li class="splide__slide w-full  ">
+                                            <div class="text-center mx-4">
+                                                <img class="rounded-lg object-contain" src="./img/product/3 Door Chiller.png"
+                                                    alt="" width="1310" height="873">
+                                                <div class=" flex items-baseline justify-center  mt-4">
+                                                    <p class="w-10 border-b-2 md:border-b-4 border-gold-500">
+                                                    </p>
+                                                </div>
+                                                <p class="mt-2 text-2xl font-semibold  text-gray-900 ">
+                                                    Bakery & Food
+                                                    Machinery
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide w-full  ">
+        
+                                            <div class="text-center mx-4">
+                                                <img class="rounded-lg" src="./img/product/IBSP-BM10N-500x500.png" alt=""
+                                                    width="1310" height="873">
+                                                <div class=" flex items-baseline justify-center  mt-4">
+                                                    <p class="w-10 border-b-2 md:border-b-4 border-gold-500">
+                                                    </p>
+                                                </div>
+                                                <p class="mt-2 text-2xl font-semibold  text-gray-900 ">
+                                                    Stainless Steel
+                                                    Equipment
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide w-full  ">
+        
+                                            <div class="text-center mx-4">
+                                                <img class="rounded-lg" src="./img/product/cs48-400-500x500.jpg" alt=""
+                                                    width="1310" height="873">
+                                                <div class=" flex items-baseline justify-center  mt-4">
+                                                    <p class="w-10 border-b-2 md:border-b-4 border-gold-500">
+                                                    </p>
+                                                </div>
+                                                <p class="mt-2 text-2xl font-semibold text-gray-900 ">
+                                                    Commercial Freezer
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide w-full  ">
+                                            <div class="text-center mx-4">
+                                                <img class="rounded-lg object-contain" src="./img/product/3 Door Chiller.png"
+                                                    alt="" width="1310" height="873">
+                                                <div class=" flex items-baseline justify-center  mt-4">
+                                                    <p class="w-10 border-b-2 md:border-b-4 border-gold-500">
+                                                    </p>
+                                                </div>
+                                                <p class="mt-2 text-2xl font-semibold  text-gray-900 ">
+                                                    Commercial Freezer
+                                                </p>
+                                            </div>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Perkhidmatan Kami -->
+        <div class="py-12 bg-white">
+            <div class="lg:block relative py-12 px-4 sm:px-6 lg:px-8  bg-gray-200">
+                <div class=" flex    z-60 relative ">
+                    
+                    <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-5xl lg:px-2  lg:w-full lg:pb-28 xl:pb-32 mx-auto">
+                        <div class="text-center">
+                            <p class="mt-2  text-2xl font-extrabold  text-gray-900 sm:text-3xl">
+                                Perkhidmatan Kami
+
+                            </p>
+                            <div class=" flex items-baseline justify-center  mt-4">
+                                <p class="w-10 border-b-2 md:border-b-4 border-gold-500">
+                                </p>
+                            </div>
+                            <p class="mt-4   justify-center  text-center max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla dolor, ornare 
+                                ut lacinia sed, elementum vel lorem. Mauris sit amet auctor risus.
+                            </p>
+                        </div>
+                        <div class="mt-10 grid sm:grid-cols-2  gap-8" id="counter">
+                            <div class="bg-white py-4 pb-2 px-4 hover:transform hover:scale-105 transition ease-in-out ">
+                                <div class="flex items-center "
+                                  >
+                                    <img class="flex items-center justify-center h-32 w-32" data-aos="fade"  
+                                        data-tilt-axis="x" data-tilt-scale="1.1" src="./img/section/servis.png"
+                                        alt="commercial-refrigeration">
+                                 
+                                </div>
+                                <dd class="ml-5 text-2xl text-gray-900 tracking-tight font-bold">Servis & Penyelenggaraan
+                                </dd>
+                                <p class="mt-6 ml-5 mb-10 text-base font-semibold text-gray-900">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.
+                                    Phasellus nulla dolor, ornare ut lacinia sed, elementum vel
+                                    lorem. Mauris sit amet auctor risus.</p>
+                            </div>
+                            <div class="bg-white py-4 pb-2 px-4 hover:transform hover:scale-105 transition ease-in-out ">
+                                <div class="flex items-center "
+                                  >
+                                    <img class="flex items-center justify-center h-32 w-32" data-aos="fade" data-aos-delay="100"
+                                        data-tilt-axis="x" data-tilt-scale="1.1" src="./img/section/ilmu.png"
+                                        alt="commercial-refrigeration">
+                                 
+                                </div>
+                                <dd class="ml-5 text-2xl text-gray-900 tracking-tight font-bold">Perkongsian Ilmu
+
+
+                                </dd>
+                                <p class="mt-6 ml-5 mb-10 text-base font-semibold text-gray-900">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.
+                                    Phasellus nulla dolor, ornare ut lacinia sed, elementum vel
+                                    lorem. Mauris sit amet auctor risus.</p>
+                            </div>
+                            <div class="bg-white py-4 pb-2 px-4 hover:transform hover:scale-105 transition ease-in-out ">
+                                <div class="flex items-center  "
+                                  >
+                                    <img class="flex items-center justify-center h-32 w-32" data-aos="fade" data-aos-delay="200"
+                                        data-tilt-axis="x" data-tilt-scale="1.1" src="./img/section/penghantaran.png"
+                                        alt="commercial-refrigeration">
+                                 
+                                </div>
+                                <dd class="ml-5 text-2xl text-gray-900 tracking-tight font-bold">Penghantaran Percuma 
+
+
+                                </dd>
+                                <p class="mt-6 ml-5 mb-10 font-semibold text-base text-gray-900">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.
+                                    Phasellus nulla dolor, ornare ut lacinia sed, elementum vel
+                                    lorem. Mauris sit amet auctor risus.</p>
+                            </div>
+                            <div class="bg-white py-4 pb-2 px-4 hover:transform hover:scale-105 transition ease-in-out ">
+                                <div class="flex items-center  "
+                                  >
+                                    <img class="flex items-center justify-center h-32 w-32" data-aos="fade" data-aos-delay="300"
+                                        data-tilt-axis="x" data-tilt-scale="1.1" src="./img/section/khidmat.png"
+                                        alt="commercial-refrigeration">
+                                 
+                                </div>
+                                <dd class="ml-5 text-2xl text-gray-900 tracking-tight font-bold">Khidmat Selepas Jualan 
+                                </dd>
+                                <p class="mt-6 ml-5 mb-10 text-base font-semibold text-gray-900">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.
+                                    Phasellus nulla dolor, ornare ut lacinia sed, elementum vel
+                                    lorem. Mauris sit amet auctor risus.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" lg:absolute lg:inset-y-0 lg:-right-0 lg:w-6/12 z-10">
+                    <!-- https://bennettfeely.com/clippy/ -->
+                    <svg class="hidden lg:block h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full bg-gold-500" style="-webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+                                  clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 0% 100%);">
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- contact Section -->
+        <div class="bg-white pt-10" id="contact">
+            <div class="max-w-7xl mx-auto md:-mb-32 px-4   sm:px-6 lg:px-8 z-50">
+                <div class="relative text-center mb-10">
+                    <p class="  text-2xl font-extrabold  text-gray-900 sm:text-3xl">
+                        Jenama Kami
+
+                    </p>
+                    <div class=" flex items-baseline justify-center  mt-4">
+                        <p class="w-10 border-b-2 md:border-b-4 border-gold-500">
+                        </p>
+                    </div>
+                    <div class="mt-4   justify-center  text-center max-w-6xl text-xl text-gray-500 lg:mx-auto">
+                        <div class="max-w-full mx-auto py-2 px-4 sm:px-6 lg:px-8 text-center justify-center">
+                            <div class="mt-6 flex flex-row space-x-8 text-center justify-center">
+                                <div class="  flex justify-center   ">
+                                    <img class=" h-auto w-40 object-contain"  
+                                        data-tilt-scale="1.1" src="./img/logo/Berjaya-Logo.png"
+                                        alt="commercial-refrigeration">
+                                </div>
+                                <div class="  flex justify-center   ">
+                                    <img class="h-autow-40 object-contain"  
+                                        data-tilt-scale="1.1" src="./img/logo/cke-logo2.png"
+                                        alt="cooking-equipment">
+                                </div>
+                                <div class=" flex justify-center  ">
+                                    <img class="h-auto w-40 object-contain"  
+                                        data-tilt-scale="1.1" src="./img/logo/logo.png"
+                                        alt="foodservice-equipment">
+                                </div>
+                                <div class=" flex justify-center  ">
+                                    <img class="h-auto w-40 object-contain"  
+                                        data-tilt-scale="1.1" src="./img/logo/sanden.png"
+                                        alt="bakery-machinery">
+                                </div>
+                                                      </div>
+                        </div>
+                    </div>
+                </div>
+              <div class="relative bg-white shadow-xl  z-50">
+                <h2 class="sr-only">Contact us</h2>
+          
+                <div class="grid grid-cols-1 lg:grid-cols-5">
+                  <!-- Contact information -->
+                  <div class="relative overflow-hidden py-10 px-6 bg-brown sm:px-10 xl:p-12 lg:col-span-3">
+                    <div class="relative ">
+                        <div class="inline-block items-center mb-2 ">
+                            <p class="w-10 border-b-2 md:border-b-4 border-gold-500">
+                            </p>
+                        </div>
+                        <h3
+                            class=" text-2xl inline font-semibold text-white tracking-tight sm:text-3xl sm:tracking-normal">
+                            Hubungi Kami
+                             
+                        </h3>
+
+                        <p class="mt-6 text-base text-white w-4/5 ">Sila hubungi kami dan pasukan pakar kami a
+                            kan menjawab soalan anda.</p>
+                            <div class="relative mt-6 ">
+                                <a class="items-center align-middle group-hover:text-gold-300 " href="https://goo.gl/maps/qBrwWKPzp67rL3Zm6" target="_blank">
+                                  <div class="absolute flex items-center justify-center  h-20 w-auto rounded-md  text-white">
+                                    <img class=" h-20 w-auto" src="./img/logo/TAN REFRIGERATION LOGO-01.png"alt="">
+
+                                  </div>
+                                  <p class="ml-24 text-lg leading-6 font-medium text-white hover:text-gold-300 ">218, Jalan Kuala Ketil,</p>
+                                  <p class="ml-24 text-lg leading-6 font-medium text-white hover:text-gold-300">Taman Kampung Raja,</p>
+                                  <p class="ml-24 text-lg leading-6 font-medium text-white hover:text-gold-300">08000 Sungai Petani, Kedah.
+                                  </a>
+
+                                </dt>
+                              </div>
+
+
+                    </div>
+                    <dl class="mt-8 space-y-6">
+                      <dt><span class="sr-only">Phone number</span></dt>
+                      <dd class="flex text-base text-gray-50">
+                        <!-- Heroicon name: outline/phone -->
+                        <svg class="flex-shrink-0 w-6 h-6 text-gray-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span class="ml-3">016-475 8381/019-410 0046
+                        </span>
+                      </dd>
+                      <dt><span class="sr-only">Email</span></dt>
+                      <dd class="flex text-base text-gray-50">
+                        <!-- Heroicon name: outline/mail -->
+                        <svg class="flex-shrink-0 w-6 h-6 text-gray-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span class="ml-3" href="mailto:tanref@yahoo.com">tanref@yahoo.com</span>
+                      </dd>
+                      <dd class="flex text-base text-gray-50">
+                        <svg class="flex-shrink-0 w-6 h-6" viewBox="0 0 123 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                            <g transform="matrix(1,0,0,1,-871.32,-19728.7)">
+                                <g transform="matrix(5.55556,0,0,5.55556,0,0)">
+                                    <g transform="matrix(1,0,0,1,167.939,3567.69)">
+                                        <path d="M0,-9.658C2.142,-9.658 4.284,-9.661 6.426,-9.654C6.626,-9.653 6.683,-9.704 6.682,-9.908C6.672,-11.162 6.678,-12.417 6.676,-13.672C6.674,-14.778 5.946,-15.504 4.838,-15.505C1.629,-15.506 -1.579,-15.506 -4.787,-15.504C-5.943,-15.504 -6.667,-14.78 -6.668,-13.624C-6.671,-12.396 -6.661,-11.169 -6.676,-9.941C-6.679,-9.69 -6.595,-9.652 -6.372,-9.653C-4.248,-9.661 -2.124,-9.658 0,-9.658M-0.007,-2.644C-2.185,-2.644 -4.362,-2.643 -6.541,-2.647C-6.709,-2.647 -6.819,-2.649 -6.818,-2.417C-6.81,-0.194 -6.821,2.029 -6.81,4.251C-6.804,5.264 -6.097,5.946 -5.082,5.946C-1.704,5.949 1.675,5.949 5.054,5.946C6.072,5.946 6.774,5.238 6.776,4.217C6.778,2.022 6.773,-0.175 6.782,-2.37C6.783,-2.594 6.722,-2.651 6.5,-2.65C4.331,-2.641 2.162,-2.644 -0.007,-2.644M8.084,-8.635L-3.292,-8.635C-4.978,-8.635 -6.663,-8.639 -8.348,-8.633C-9.337,-8.628 -10.072,-7.915 -10.075,-6.953C-10.082,-4.766 -10.08,-2.579 -10.075,-0.391C-10.074,0.163 -9.835,0.613 -9.396,0.949C-9.062,1.206 -8.677,1.292 -8.259,1.284C-7.736,1.274 -7.736,1.282 -7.736,0.772C-7.736,-0.582 -7.73,-1.935 -7.741,-3.289C-7.743,-3.515 -7.679,-3.569 -7.458,-3.569C-2.518,-3.562 2.421,-3.564 7.361,-3.563C7.743,-3.562 7.699,-3.614 7.699,-3.216C7.701,-1.8 7.699,-0.384 7.703,1.033C7.704,1.121 7.633,1.249 7.814,1.282C8.958,1.495 9.95,0.688 9.952,-0.475C9.956,-2.573 9.954,-4.671 9.953,-6.769C9.952,-7.958 9.274,-8.635 8.084,-8.635ZM-0.028,6.872C-1.695,6.872 -3.363,6.873 -5.031,6.872C-6.634,6.87 -7.733,5.771 -7.735,4.168C-7.736,3.621 -7.743,3.073 -7.731,2.528C-7.728,2.347 -7.783,2.294 -7.959,2.303C-8.519,2.33 -9.072,2.3 -9.582,2.029C-10.542,1.519 -11.079,0.723 -11.088,-0.368C-11.108,-2.573 -11.101,-4.779 -11.092,-6.984C-11.086,-8.42 -9.957,-9.583 -8.523,-9.652C-8.326,-9.662 -8.127,-9.672 -7.932,-9.654C-7.724,-9.636 -7.679,-9.715 -7.681,-9.911C-7.689,-11.193 -7.7,-12.476 -7.679,-13.758C-7.661,-14.922 -7.104,-15.767 -6.059,-16.28C-5.7,-16.457 -5.313,-16.531 -4.913,-16.531C-1.631,-16.532 1.65,-16.535 4.932,-16.53C6.475,-16.527 7.693,-15.304 7.701,-13.759C7.707,-12.53 7.702,-11.302 7.702,-10.073C7.702,-9.659 7.702,-9.652 8.11,-9.66C9.072,-9.678 9.859,-9.327 10.442,-8.554C10.781,-8.105 10.965,-7.593 10.967,-7.029C10.972,-4.797 10.98,-2.564 10.965,-0.332C10.955,1.113 9.753,2.286 8.308,2.305C7.7,2.313 7.71,2.313 7.697,2.923C7.685,3.549 7.769,4.18 7.642,4.801C7.389,6.03 6.37,6.864 5.11,6.87C3.397,6.877 1.685,6.872 -0.028,6.872" style="fill:white;fill-rule:nonzero;"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        
+                        <span class="ml-3" >04-421 8133</span>
+                      </dd>
+                    </dl>
+
+                  </div>
+          
+                  <!-- Contact form -->
+                  <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
+                    <form action=""class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                        <input
+                        type="checkbox"
+                        name="_honeypot"
+                        style="display:none"
+                        tabindex="-1"
+                        autocomplete="off"
+                      />
+                      <div class="sm:col-span-2">
+                        <div class="mt-1">
+                          <input type="text" placeholder="Nama" name="first-name" id="first-name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-gold-500 focus:border-gold-500 border-gold-300 border-4 rounded-md">
+                        </div>
+                      </div>
+                      <div class="sm:col-span-2">
+                        <div class="mt-1">
+                          <input type="text" placeholder="Telefon" name="phone" id="phone" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm text-gray-900  focus:ring-gold-500 focus:border-gold-500 border-gold-300 border-4  rounded-md" aria-describedby="phone-optional">
+                        </div>
+                      </div>
+                      <div class="sm:col-span-2">
+                        <div class="mt-1">
+                          <input id="email" name="email" type="email" placeholder="Emel" autocomplete="email" class="py-3 px-4 block w-full shadow-sm text-gray-900  focus:ring-gold-500 focus:border-gold-500 border-gold-300 border-4 rounded-md">
+                        </div>
+                      </div>
+
+                        <div class="sm:col-span-2">
+                        <div class="mt-1">
+                          <textarea id="message" placeholder="Mesej" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm text-gray-900  focus:ring-gold-500 focus:border-gold-500 border-gold-300 border-4  rounded-md" aria-describedby="message-max"></textarea>
+                        </div>
+                      </div>
+   
+                      <div class="sm:col-span-2">
+
+                        <button
+                        class=" z-30 w-full flex items-center justify-center px-1 py-2 border border-transparent text-base font-semibold rounded-xl shadow-sm text-gray-700 bg-gold-500 hover:bg-gold-200 hover:transform hover:scale-105 sm:px-8">
+                       Hantar </button>                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- https://stackoverflow.com/questions/42457368/google-maps-night-mode-embed-iframe -->
+            <iframe class="w-full h-112 overflow-hidden z-10"  style="filter: invert(90%) contrast(73%);"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15882.125088936818!2d100.4989459!3d5.635975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3f7c51bf8e6b815!2sTan%20Refrigeration%20%26%20Air%20Conditioner%20Service!5e0!3m2!1sen!2smy!4v1660335438431!5m2!1sen!2smy"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+        
+
+    </main>
+    <!-- Footer here -->
+ 
+
+<footer class=" bg-gray-5- ">
+    <div class="mx-auto flex justify-between max-w-md py-2 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-full lg:px-8">
+
+      <p class=" text-center text-base text-gray-800" >
+        &copy; <span  x-data="{date: new Date}"
+        x-text="date.getFullYear()"></span> Copyright Tan Refrigeration Service. All rights reserved
+
+      </p>
+      <p class="text-center text-sm text-gray-800" >
+        Website by <a href="https://www.antwebstudio.com/" class="hover:text-red-900">Ant Web studio</a>
+      </p>
+    </div>
+  </footer>
+<!-- <div id="WAButton"></div> -->
+
+<script src="./js/scripts.js"></script>
+
+<!-- Demo Purpose -->
+
+
+<!--Jquery-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+<!--Floating WhatsApp css-->
+<!-- <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css"> -->
+<!--Floating WhatsApp javascript-->
+<!-- <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script> -->
+
+
+</body>
+
+</html>
