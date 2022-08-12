@@ -94,11 +94,13 @@ backdrop-filter: blur(6.7px);
   <div class=" lg:max-w-7xl mx-auto relative py-2  sm:py-6 lg:py-9 px-4 sm:px-6 lg:px-8  ">
     <nav class="relative flex items-center justify-center  sm:h-10 " aria-label="Global">
       <div class="hidden md:block md:mr-10 md:pl-4 md:space-x-8">
+        <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
         <a href="/" class="font-bold text-gray-500 hover:text-gray-900"
-          :class="(urlPathname===`/` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Utama
+          :class="(urlPathname===`/tan-refrigeration-service-staging/` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Utama
         </a>
+        <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
         <a href="/tentang-kami" class=" text-gray-500 hover:text-gray-900"
-          :class="(urlPathname===`/tentang-kami` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Tentang
+          :class="(urlPathname===`/tan-refrigeration-service-staging/tentang-kami` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Tentang
           Kami</a>
       </div>
       <div class="flex items-center flex-grow flex-shrink-0 md:flex-grow-0">
@@ -127,7 +129,8 @@ backdrop-filter: blur(6.7px);
           :class="(urlPathname.indexOf('/produk') > -1 )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Produk</a> -->
           <a href="/produk" class="  text-gray-500 hover:text-gray-900"
           :class="(/produk/.test(urlPathname))? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Produk</a>
-        <a href="/hubungi-kami" class="  text-gray-500 hover:text-gray-900"
+        <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
+          <a href="/hubungi-kami" class="  text-gray-500 hover:text-gray-900"
           :class="(urlPathname===`/hubungi-kami` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Hubungi
           Kami</a>
       </div>
@@ -164,14 +167,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         </div>
       </div>
       <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-50">
-        <a href="/" :class="(urlPathname===`/` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+        <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->      
+        <a href="/" :class="(urlPathname===`/tan-refrigeration-service-staging/` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
           class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Utama</a>
-        <a href="/tentang-kami" :class="(urlPathname===`/tentang-kami` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+        <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
+        <a href="/tan-refrigeration-service-staging/tentang-kami" :class="(urlPathname===`/tentang-kami` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
           class="block px-3 py-2   text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Tentang
           Kami</a>
         <a href="/produk" :class="(/produk/.test(urlPathname))? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
           class="block px-3 py-2  text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Produk</a>
-        <a href="/hubungi-kami" :class="(urlPathname===`/hubungi-kami` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+        <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
+        <a href="/tan-refrigeration-service-staging/hubungi-kami" :class="(urlPathname===`/hubungi-kami` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
           class="block px-3 py-2  text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Hubungi
           Kami</a>
 
