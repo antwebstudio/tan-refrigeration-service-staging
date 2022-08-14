@@ -131,7 +131,7 @@ backdrop-filter: blur(6.7px);
           :class="(/produk/.test(urlPathname))? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Produk</a>
         <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
           <a href="/hubungi-kami" class="  text-gray-500 hover:text-gray-900"
-          :class="(urlPathname===`/hubungi-kami` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Hubungi
+          :class="(urlPathname===`/tan-refrigeration-service-staging/hubungi-kami` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Hubungi
           Kami</a>
       </div>
     </nav>
@@ -323,7 +323,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
                                 <div class="hidden sm:block sm:my-3 sm:py-16 border-r-4 border-gold" data-aos="fade">
                                 </div>
                                 <div class="items-center justify-center text-center" data-aos="fade"
-                                    data-aos-delay="150">
+                                    data-aos-delay="200">
                                     <div>
                                         <div class="flex items-center justify-center text-center ">
                                             <img class="w-10/12" data-aos="fade" data-tilt data-tilt-axis="x"
@@ -833,15 +833,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     <!-- Footer here -->
  
 
-<footer class=" bg-gray-5- ">
-    <div class="mx-auto flex justify-between max-w-md py-2 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-full lg:px-8">
+<footer class=" bg-gray-50 border-t-2 border-gray-100 ">
+    <div class="mx-auto sm:flex justify-between max-w-md py-2 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-full lg:px-8">
 
-      <p class=" text-center text-base text-gray-800" >
+      <p class=" text-center text-xs sm:text-sm   text-gray-800" >
         &copy; <span  x-data="{date: new Date}"
         x-text="date.getFullYear()"></span> Copyright Tan Refrigeration Service. All rights reserved
 
       </p>
-      <p class="text-center text-sm text-gray-800" >
+      <p class="text-center text-xs  sm:text-sm   text-gray-800" >
         Website by <a href="https://www.antwebstudio.com/" class="hover:text-red-900">Ant Web studio</a>
       </p>
     </div>

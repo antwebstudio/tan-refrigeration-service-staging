@@ -131,7 +131,7 @@ backdrop-filter: blur(6.7px);
           :class="(/produk/.test(urlPathname))? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Produk</a>
         <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
           <a href="/hubungi-kami" class="  text-gray-500 hover:text-gray-900"
-          :class="(urlPathname===`/hubungi-kami` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Hubungi
+          :class="(urlPathname===`/tan-refrigeration-service-staging/hubungi-kami` )? 'font-bold border-gold-500 border-b-2  hover:border-gold-600': 'font-normal'">Hubungi
           Kami</a>
       </div>
     </nav>
@@ -221,9 +221,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
             <ol role="list" class="flex items-center space-x-4">
               <li>
                 <div>
-                  <a href="#" class="text-gray-400 hover:text-gray-500">
+                  <a href="/" class="text-gray-400 hover:text-gray-500">
 
-                    <a href="#" class="ml-4 text-lg font-medium text-gray-500 hover:text-gray-700">Utama</a>
+                    <a href="/" class="ml-4 text-lg font-medium text-gray-500 hover:text-gray-700">Utama</a>
                 </a>
                 </div>
               </li>
@@ -234,7 +234,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
                   <svg class="flex-shrink-0 h-5 w-5 text-gold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                   </svg>
-                  <a href="#" class="ml-4 text-lg font-semibold text-gray-800 hover:text-gray-700">Hubungi Kami</a>
+                  <a href="/hubungi-kami" class="ml-4 text-lg font-semibold text-gray-800 hover:text-gray-700">Hubungi Kami</a>
                 </div>
               </li>
             </ol>
@@ -365,15 +365,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     <!-- Footer here -->
  
 
-<footer class=" bg-gray-5- ">
-    <div class="mx-auto flex justify-between max-w-md py-2 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-full lg:px-8">
+<footer class=" bg-gray-50 border-t-2 border-gray-100 ">
+    <div class="mx-auto sm:flex justify-between max-w-md py-2 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-full lg:px-8">
 
-      <p class=" text-center text-base text-gray-800" >
+      <p class=" text-center text-xs sm:text-sm   text-gray-800" >
         &copy; <span  x-data="{date: new Date}"
         x-text="date.getFullYear()"></span> Copyright Tan Refrigeration Service. All rights reserved
 
       </p>
-      <p class="text-center text-sm text-gray-800" >
+      <p class="text-center text-xs  sm:text-sm   text-gray-800" >
         Website by <a href="https://www.antwebstudio.com/" class="hover:text-red-900">Ant Web studio</a>
       </p>
     </div>
