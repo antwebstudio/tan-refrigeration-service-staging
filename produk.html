@@ -109,15 +109,15 @@ backdrop-filter: blur(6.7px);
       <div class="hidden md:block md:mr-10 md:pl-4 md:space-x-8">
         <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
         <a href="/" class="font-bold text-gray-500 hover:text-gray-900 text-center items-center  justify-center relative flex-col"
-          :class="(urlPathname===`/` )? 'font-bold ': 'font-normal'">Utama
-          <hr  :class="(urlPathname===`/` )? 'block ': 'hidden'" class=" border-gold-500 border-b-4 w-6  mt-1  left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 text-center absolute">
+          :class="(urlPathname===`/tan-refrigeration-service-staging/` )? 'font-bold ': 'font-normal'">Utama
+          <hr  :class="(urlPathname===`/tan-refrigeration-service-staging/` )? 'block ': 'hidden'" class=" border-gold-500 border-b-4 w-6  mt-1  left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 text-center absolute">
         </a>
 
         <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
         <a href="/tentang-kami" class=" text-gray-500 hover:text-gray-900  text-center items-center  justify-center relative flex-col"
-          :class="(urlPathname===`/tentang-kami` )? 'font-bold ': 'font-normal'">Tentang
+          :class="(urlPathname===`/tan-refrigeration-service-staging/tentang-kami` )? 'font-bold ': 'font-normal'">Tentang
           Kami
-          <hr :class="(urlPathname===`/tentang-kami` )? 'block ': 'hidden'" class=" border-gold-500 border-b-4 w-6 mt-1 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 text-center absolute" >
+          <hr :class="(urlPathname===`/tan-refrigeration-service-staging/tentang-kami` )? 'block ': 'hidden'" class=" border-gold-500 border-b-4 w-6 mt-1 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 text-center absolute" >
         </a>
       </div>
       <div class="flex items-center flex-grow flex-shrink-0 md:flex-grow-0">
@@ -147,16 +147,16 @@ backdrop-filter: blur(6.7px);
         <!-- https://stackoverflow.com/questions/4597050/how-to-check-if-the-url-contains-a-given-string -->
         <!-- <a href="/produk" class="  text-gray-500 hover:text-gray-900"
           :class="(urlPathname.indexOf('/produk') > -1 )? 'font-bold border-gold-500 border-b-4  hover:border-gold-600': 'font-normal'">Produk</a> -->
-          <a href="/produk" class="  text-gray-500 hover:text-gray-900  text-center items-center  justify-center relative flex-col"
+          <a href="/tan-refrigeration-service-staging/produk" class="  text-gray-500 hover:text-gray-900  text-center items-center  justify-center relative flex-col"
           :class="(/produk/.test(urlPathname))? 'font-bold': 'font-normal'">Produk
-          <hr :class="(/produk/.test(urlPathname))? 'block ': 'hidden'" class=" border-gold-500 border-b-4 w-6 mt-1 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 text-center absolute" >
+          <hr :class="(/.test(urlPathname))? 'block ': 'hidden'" class=" border-gold-500 border-b-4 w-6 mt-1 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 text-center absolute" >
 
         </a>
         <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
-          <a href="/hubungi-kami" class="  text-gray-500 hover:text-gray-900  text-center items-center  justify-center relative flex-col"
-          :class="(urlPathname===`/hubungi-kami` )? 'font-bold': 'font-normal'">Hubungi
+          <a href="/tan-refrigeration-service-staging/hubungi-kami" class="  text-gray-500 hover:text-gray-900  text-center items-center  justify-center relative flex-col"
+          :class="(urlPathname===`/tan-refrigeration-service-staging/hubungi-kami` )? 'font-bold': 'font-normal'">Hubungi
           Kami
-          <hr :class="(urlPathname===`/hubungi-kami` )? 'block ': 'hidden'" class=" border-gold-500 border-b-4 w-6 mt-1 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 text-center absolute" >
+          <hr :class="(urlPathname===`/tan-refrigeration-service-staging/hubungi-kami` )? 'block ': 'hidden'" class=" border-gold-500 border-b-4 w-6 mt-1 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 text-center absolute" >
         </a>
       </div>
     </nav>
@@ -194,17 +194,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
       </div>
       <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-50">
         <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->      
-        <a href="/" :class="(urlPathname===`/` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+        <a href="/tan-refrigeration-service-staging/" :class="(urlPathname===`/tan-refrigeration-service-staging/` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
           class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Utama</a>
         <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
-        <a href="/tentang-kami" :class="(urlPathname===`/tan-refrigeration-service-staging/tentang-kami` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+        <a href="/tan-refrigeration-service-staging/tentang-kami" :class="(urlPathname===`/tan-refrigeration-service-staging/tentang-kami` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
           class="block px-3 py-2   text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Tentang
           Kami</a>
         <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
-        <a href="/produk" :class="(/produk/.test(urlPathname))? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+        <a href="/tan-refrigeration-service-staging/produk" :class="(/tan-refrigeration-service-staging/produk/.test(urlPathname))? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
           class="block px-3 py-2  text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Produk</a>
         <!-- PLEASE REMOVE /tan-refrigeration-service-staging/ at (urlPathname===`/tan-refrigeration-service-staging/{pagelink}` ) in production -->
-        <a href="/hubungi-kami" :class="(urlPathname===`/tan-refrigeration-service-staging/hubungi-kami` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
+        <a href="/tan-refrigeration-service-staging/hubungi-kami" :class="(urlPathname===`/tan-refrigeration-service-staging/hubungi-kami` )? 'font-bold text-gray-700 border-l-4 border-gold-300': 'font-normal text-gray-900'"
           class="block px-3 py-2  text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Hubungi
           Kami</a>
 
@@ -331,7 +331,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
                       <div class=" px-4 py-5 sm:px-6">
                         <div class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3">
                           <div class="sm:col-span-1 hover:transform hover:scale-105">
-                            <a class="text-center " href="/produk-1-detail-door">
+                            <a class="text-center " href="/tan-refrigeration-service-staging/produk-1-detail-door">
                                 <img class="rounded-lg" src="./img/product/3 Door Chiller.png" alt=""
                                     width="1310" height="873">
                                 <div class=" flex items-baseline justify-center  mt-4">
@@ -344,7 +344,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
                             </a>
                           </div>
                           <div class="sm:col-span-1 hover:transform hover:scale-105">
-                            <a class="text-center " href="/produk-2-detail-door">
+                            <a class="text-center " href="/tan-refrigeration-service-staging/produk-2-detail-door">
                                 <img class="rounded-lg" src="./img/product/IBSP-BM10N-500x500.png" alt=""
                                     width="1310" height="873">
                                 <div class=" flex items-baseline justify-center  mt-4">
